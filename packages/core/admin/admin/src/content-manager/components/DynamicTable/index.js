@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 
 import { DynamicTable as Table, useStrapiApp } from '@strapi/helper-plugin';
-import getReviewWorkflowsColumn from 'ee_else_ce/content-manager/components/DynamicTable/CellContent/ReviewWorkflowsStage/getTableColumn';
 import PropTypes from 'prop-types';
 import { useIntl } from 'react-intl';
 import { useSelector } from 'react-redux';
@@ -12,6 +11,7 @@ import { getTrad } from '../../utils';
 
 import BulkActionsBar from './BulkActionsBar';
 import { PublicationState } from './CellContent/PublicationState/PublicationState';
+import getReviewWorkflowsColumn from './CellContent/ReviewWorkflowsStage/getTableColumn';
 import ConfirmDialogDelete from './ConfirmDialogDelete';
 import TableRows from './TableRows';
 
